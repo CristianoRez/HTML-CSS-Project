@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clothing</title>
+    <style>
+      .container {
+        display: flex;
+        position: relative;
+        border: 1px solid black;
+        height: 500px;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .clothing-img {
+        width: 400px;
+        height: 400px;
+      }
+      .promotion-container {
+        background-color: black;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .add-to-cart-container {
+        display: flex;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        opacity: 0;
+      }
+      .add-to-cart-button {
+        background-color: white;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid black;
+        font-size: 16px;
+        font-family: Arial;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .container:hover .add-to-cart-container {
+        transition: 0.3;
+        opacity: 1;
+      }
+      .open {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        opacity: 0.6;
+        position: absolute;
+        bottom: -50px;
+        opacity: 0;
+      }
+      .container:hover .open {
+        transition: 0.3;
+        opacity: 0.5;
+      }
+      .title{
+        position: absolute;
+        z-index: 100;
+        bottom: -110px;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body style="height: 3000px">
+    <div class="container">
+      <img class="clothing-img" src="https://www.vestse.com.br/cdn/shop/files/5.jpg?" />
+      <div class="promotion-container">20% OFF</div>
+      <div class="add-to-cart-container">
+        <button class="add-to-cart-button">Add To Cart</button>
+      </div>
+      <div class="open">Open</div>
+      <div class="title">
+        <p><a style="text-decoration: none; color: black" href="https://www.vestse.com.br/products/moletom-vestse-insider%C2%AE%EF%B8%8F">Moletom</a></p>
+      </div>
+    </div>
+  </body>
+</html>

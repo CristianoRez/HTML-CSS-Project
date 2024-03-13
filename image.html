@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Images</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+      .pagani1-img {
+        width: 200px;
+        border-radius: 10px;
+      }
+      .pagani2-img {
+        width: 100px;
+        height: 112px;
+        object-fit: cover;
+        object-position: -70px;
+      }
+      .pagani3-img {
+        height: 112px;
+        width: 112px;
+        object-fit: cover;
+        object-position: -60px;
+        border-radius: 62px;
+      }
+      .placeholder1{
+        padding: 10px;
+        border-radius: 6px;
+        border: solid 1px gray;
+      }
+      .placeholder2{
+        border: none;
+        padding: 5px;
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+      .email-text{
+        font-size: 12px;
+        color: gray;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 3px
+      }
+      .input-linkedln{
+        width: 250px;
+        border: solid 1px black;
+        border-radius: 2px;
+        padding: 3px;
+        margin-bottom: 10px;
+      }
+      .terms-linkedln{
+        font-size: 10px;
+        color: gray;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .agree-button{
+        margin-bottom: 20px;
+        border: none;
+        padding: 10px;
+        background-color: rgb(39, 114, 255);
+        color: white;
+        width: 250px;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+      .vertical-align{
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        color: gray;
+        font-size: 12px;
+      }
+      .pagani4-img{
+        height: 33px;
+        width: 33px;
+        object-fit: cover;
+        object-position: -15px;
+        border-radius: 16px;
+      }
+      .twitter-button{
+        color: white;
+        background-color: rgb(0, 128, 255);
+        border: none;
+        border-radius: 18px;
+        height: 24px;
+        width: 48px;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+        
+      }
+      .twitter-button:hover{
+        transition: 0.15s;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+      .twitter-button:active{
+        background-color: rgb(32, 110, 212);
+        transition: 0.15s
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Search" class="placeholder1"/>
+    <input type="text" placeholder="Search Google or type a URL" class="placeholder2"/>
+    <div class="linkedln-singup">
+        <p class="email-text">Email</p>
+        <input type='text' class="input-linkedln"/>
+        <p class='terms-linkedln'>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+        <button class='agree-button'>Agree & Join</button>
+    </div>
+    <img
+      src="images/pagani_zonda_cinque_roadster_4k-3840x2160.jpg"
+      class="pagani1-img"
+    />
+    <img
+      src="images/pagani_zonda_cinque_roadster_4k-3840x2160.jpg"
+      class="pagani2-img"
+    />
+    <img
+      src="images/pagani_zonda_cinque_roadster_4k-3840x2160.jpg"
+      class="pagani3-img"
+    />
+    <div class="vertical-align">
+        <img
+        src="images/pagani_zonda_cinque_roadster_4k-3840x2160.jpg"
+        class="pagani4-img"
+      />
+        <p>What's happening?</p>
+        <button class="twitter-button">Tweet</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Sidebar</title>
+    <style>
+      p {
+        margin: 0px;
+        font-family: Arial;
+      }
+      .profile-sidebar {
+        background-color: rgb(37, 37, 37);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        align-items: center;
+      }
+      img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+      .chat-sidebar {
+        background-color: rgb(78, 78, 78);
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        left: 100px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-sidebar">
+      <img src="images/bugatti-logo.png" /><img
+        src="images/aston-martin-new-logo.jpg"
+      /><img style="background-color: white" src="images/Pagani-Logo.svg" />
+    </div>
+    <div class="chat-sidebar">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 15px;
+        "
+      >
+        <p
+          style="
+            font-weight: bold;
+            color: white;
+            margin: 0px;
+            align-items: center;
+          "
+        >
+          INFO
+        </p>
+        <p
+          style="
+            font-weight: bold;
+            margin: 0px;
+            color: rgb(170, 170, 170);
+            font-size: 30px;
+          "
+        >
+          +
+        </p>
+      </div>
+      <div
+        style="color: rgb(170, 170, 170); display: flex; flex-direction: column"
+      >
+        <p style="margin-bottom: 10px"># new-videos</p>
+        <p style="margin-bottom: 10px"># updated</p>
+        <p style="margin-bottom: 10px"># faq</p>
+      </div>
+    </div>
+  </body>
+</html>

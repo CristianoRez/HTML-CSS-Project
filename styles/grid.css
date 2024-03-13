@@ -1,0 +1,139 @@
+.car-div {
+  font-family: Arial;
+  vertical-align: top;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  position: relative;
+}
+.car-div:hover {
+  transition: 0.15px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+p {
+  font-family: Roboto, Arial;
+  margin: 0;
+}
+.car-info {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+}
+.car-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.car-info-container {
+  margin-left: 10px;
+}
+.car-name {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 15px;
+}
+.car-units {
+  font-size: 13px;
+  color: rgb(139, 139, 139);
+}
+.add-button {
+  background-color: #141414;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 45px;
+}
+.add-button:hover {
+  cursor: pointer;
+  background-color: #4a4f52;
+  transition: 0.15s;
+}
+.add-button:active {
+  background-color: rgb(250, 250, 250);
+  color: black;
+  transition: 0.15s;
+}
+.car-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 60px;
+}
+
+@media (max-width: 750px) and (min-width: 501px) {
+  .car-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .car-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1250px) {
+  .car-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.brand-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.brand-logo-container {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 35px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.brand-profile {
+  display: flex;
+  position: relative;
+}
+.brand-profile-container {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 70px;
+  top: 10px;
+  right: 5000px;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  opacity: 0;
+  z-index: 101;
+}
+.profile-log {
+  margin-left: 10px;
+}
+
+.brand-logo:hover + .brand-profile-container {
+  opacity: 1;
+  top: 10px;
+  left: 50px;
+  transition: 0.1s;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.brand-models {
+  color: lightslategray;
+  font-size: 14px;
+}

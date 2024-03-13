@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whats happening?</title>
+    <style>
+      .vertical-align {
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        color: gray;
+        font-size: 12px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        width: 300px;
+        justify-content: space-between;
+      }
+      .pagani4-img {
+        height: 36px;
+        width: 36px;
+        object-fit: cover;
+        object-position: -15px;
+        border-radius: 18px;
+      }
+      .twitter-button {
+        color: white;
+        background-color: rgb(0, 128, 255);
+        border: none;
+        border-radius: 18px;
+        height: 24px;
+        width: 48px;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 30px;
+      }
+      .twitter-button:hover {
+        transition: 0.15s;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+      .twitter-button:active {
+        background-color: rgb(32, 110, 212);
+        transition: 0.15s;
+      }
+      .text{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+      }
+      .div2{
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vertical-align">
+      <div class="div2">
+        <img
+          src="images/pagani_zonda_cinque_roadster_4k-3840x2160.jpg"
+          class="pagani4-img"
+        />
+        <p class='text'>What's happening?</p>
+      </div>
+      <button class="twitter-button">Tweet</button>
+    </div>
+  </body>
+</html>
